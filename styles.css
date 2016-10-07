@@ -25,23 +25,23 @@
 }
 
 .leftbox {
-	background-color: #4dd7fa;
-  border: 2px solid black;
-  padding: 5px;
-  margin: 10px;
-  float: left;
-  width: 250px;
-  height: 450px;
+    background-color: #4dd7fa;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px 10px 0 0;
+    float: left;
+    width: 270px;
+    height: 450px;
 }
 
 .rightbox {
-	background-color: #fefac0;
-  border: 2px solid black;
-  padding: 5px;
-  margin: 10px;
-  float: left;
-  width: 550px;
-  height: 450px;
+	  background-color: #fefac0;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px 0 0 0;
+    float: left;
+    width: 590px;
+    height: 450px;
 }
 
 .rightbox p {
@@ -49,3 +49,12 @@
 	overflow: hidden;
 }
 
+.genres {
+	column-count: 2;
+}
+
+.filterbutton {
+	margin: 10px;
+	text-align: center;
+
+}
