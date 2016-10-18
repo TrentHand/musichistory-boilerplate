@@ -4,10 +4,78 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
+	<div class="mainbox">
+		<div class="topbar">
+		  <ul>
+		    <li><a href="#">View Music |</a></li>
+		    <li><a href="#">Add Music |</a></li>
+		    <li><a href="#">Profile</a></li>
+	  	</ul>
+	  </div>
 
+	  <div class="leftbox">
+	  	<p>Song length:</p>
+	  	<!-- CSS RANGE BAR GOES HERE:  DONE!!! -->
+	  		<input type="range" value="100" class="songtime">
 
+	  	<p>Artist: </p>
+	  	<!-- DROPDOWN SELECTOR WITH FIVE ARTISTS GOES HERE: DONE!!!-->
+	  		<select name="artists">
+				  <option value="garbage">Garbage</option>
+				  <option value="flyleaf">Flyleaf</option>
+				  <option value="fiveforfighting">Five For Fighting</option>
+				  <option value="afinefrenzy">A Fine Frenzy</option>
+				  <option value="katenash">Kate Nash</option>
+				</select>
+	  	<p>Album: </p>
+	  	<!-- DROPDOWN SELECTOR WITH FIVE ALBUMS GOES HERE: DONE!!! -->
+	  		<select name="albums">
+				  <option value="garbagedebute">Garbage</option>
+				  <option value="flyleafdebute">Flyleaf</option>
+				  <option value="battleforeverything">The Battle for Everything</option>
+				  <option value="onecellinthesea">One Cell in the Sea</option>
+				  <option value="madeofbricks">Made of Bricks</option>
+				</select>
+	  	<p>Genre: </p>
+	<!--   	Checkboxes for "Rock, Pop, Blues, Classical, Jazz, Hip hop" go here, three per column: DONE!!!
+	 -->
+		 	<div class="genres">
+		 		<input type="checkbox" name="genre" value="rock">Rock<br>
+		 		<input type="checkbox" name="genre" value="pop">Pop<br>
+		 		<input type="checkbox" name="genre" value="blues">Blues<br>
+		 		<input type="checkbox" name="genre" value="classical">Classical<br>
+		 		<input type="checkbox" name="genre" value="jazz">Jazz<br>
+		 		<input type="checkbox" name="genre" value="hiphop">Hip hop<br>
+		 	</div>	
+	 		<!--A submit button labled "Filter" goes here, centered: DONE!!!-->
+	 		<button class="filterbutton" type="button">Filter</button>
+	 	</div>
+
+	 	<div class="rightbox">
+	 		<h3>Song Name:  Only Happy When it Rains</h3>
+	 		<p>Artist name:  Garbage  |</p>
+	 		<p>Album name:  Garbage  |</p>
+	 		<p>Genre:  Rock</p>
+	 		
+	 		<h3>Song Name:  Cassie</h3>
+	 		<p>Artist name:  Flyleaf  |</p>
+	 		<p>Album name:  Flyleaf  |</p>
+	 		<p>Genre:  Rock</p> 		
+	 		
+	 		<h3>Song Name:  Almost Lover</h3>
+	 		<p>Artist name:  Feist  |</p>
+	 		<p>Album name:  Once Cell in the Sea  |</p>
+	 		<p>Genre: Pop</p>
+	 		
+	 		<h3>Song Name: Foundations</h3>
+	 		<p>Artist name: Kate Nash  |</p>
+	 		<p>Album name:  Made of Bricks |</p>
+	 		<p>Genre: Pop</p> 	
+	 	</div>
+	</div>
 </body>
 </html>
