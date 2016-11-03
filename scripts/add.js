@@ -16,18 +16,26 @@ addLink.addEventListener("click", function(event) {
 let addFields = `<div id="inputBox">
 									<form>
 									  Song Name:<br>
-									  <input type="text" name="songname"><br>
+									  <input type="text" name="songname" id="songname"><br>
 									  Artist name:<br>
-									  <input type="text" name="artistname"><br>
+									  <input type="text" name="artistname" id="artistname"><br>
 									  Album name:<br>
-									  <input type="text" name="albumname">
+									  <input type="text" name="albumname" id="albumname">
 									</form>
 									<input type="submit" value="Submit" id="addBTN">
 								 </div>`;
 							addView.innerHTML = addFields;
-							addBTN.addEventListener("click", function(){
-							console.log("addFields:  ", addFields.songname);
-});
+							addBTN.addEventListener("click", addSong);
+
+function addSong(){
+	newSong = {
+		Song: document.getElementById("songname").value,
+		Artist: document.getElementById("artistname").value,
+		Album:  document.getElementById("albumname").value
+	};
+	songList.push(newSong);
+	showListView();
+}
 
 
 

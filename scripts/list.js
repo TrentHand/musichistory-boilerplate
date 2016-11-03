@@ -2,10 +2,7 @@ var listLink = document.getElementById("link-list");
 var listView = document.getElementById("list-view");
 
 listLink.addEventListener("click", function(event) {
-  addView.classList.add("hidden");
-
-  listView.classList.add("visible");
-  listView.classList.remove("hidden");
+    showListView();
 });
 
 let songList = [
@@ -38,13 +35,25 @@ let songList = [
 	}
 ];
 
-songList.forEach(function(item, index){
-	let currentSong = `<div id="song--${index}">
+function updateList(){
+	listView.innerHTML = "";
+	songList.forEach(function(item, index){
+		let currentSong = `<div id="song--${index}">
 											 <h4>Song Name: ${item.Song}</h4>
 											 <p class="songLI">Artist: ${item.Artist}  |  </p>
-											 <p class="songLI>Album: ${item.Album}  |  </p>
-											 <p class="songLI>Genre: ${item.Genre}</p>
+											 <p class="songLI">Album: ${item.Album}</p>
 											 </div>`;
 					listView.innerHTML += `<div class="listObjects">${currentSong}</div>`;
 					let songObject = document.getElementById(`song--${index}`);
-});
+	});
+}
+
+function showListView () {
+	addView.classList.add("hidden");
+  listView.classList.add("visible");
+  listView.classList.remove("hidden");
+  updateList();
+
+}
+
+updateList();
