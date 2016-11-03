@@ -4,18 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 
 <body>
 	<div class="mainbox">
 		<div class="topbar">
 		  <ul>
-		    <li><a href="#">View Music |</a></li>
-		    <li><a href="#">Add Music |</a></li>
-		    <li><a href="#">Profile</a></li>
-	  	</ul>
+		    <li><a href="#" id="link-list">List Music |</a></li>
+		    <li><a href="#" id="link-add">Add Music |</a></li>
+		  </ul>
 	  </div>
+	</div>
 
 	  <div class="leftbox">
 	  	<p>Song length:</p>
@@ -50,32 +50,21 @@
 		 		<input type="checkbox" name="genre" value="classical">Classical<br>
 		 		<input type="checkbox" name="genre" value="jazz">Jazz<br>
 		 		<input type="checkbox" name="genre" value="hiphop">Hip hop<br>
-		 	</div>	
+		 	</div>
 	 		<!--A submit button labled "Filter" goes here, centered: DONE!!!-->
 	 		<button class="filterbutton" type="button">Filter</button>
 	 	</div>
 
-	 	<div class="rightbox">
-	 		<h3>Song Name:  Only Happy When it Rains</h3>
-	 		<p>Artist name:  Garbage  |</p>
-	 		<p>Album name:  Garbage  |</p>
-	 		<p>Genre:  Rock</p>
-	 		
-	 		<h3>Song Name:  Cassie</h3>
-	 		<p>Artist name:  Flyleaf  |</p>
-	 		<p>Album name:  Flyleaf  |</p>
-	 		<p>Genre:  Rock</p> 		
-	 		
-	 		<h3>Song Name:  Almost Lover</h3>
-	 		<p>Artist name:  Feist  |</p>
-	 		<p>Album name:  Once Cell in the Sea  |</p>
-	 		<p>Genre: Pop</p>
-	 		
-	 		<h3>Song Name: Foundations</h3>
-	 		<p>Artist name: Kate Nash  |</p>
-	 		<p>Album name:  Made of Bricks |</p>
-	 		<p>Genre: Pop</p> 	
-	 	</div>
-	</div>
+		 	<div class="rightbox">
+	 			<section class="visible" id="list-view"></section>
+
+		 		<section class="hidden" id="add-view"></section>
+
+		 	</div>
+
+
+
+<script type="text/javascript" src="scripts/list.js"></script>
+<script type="text/javascript" src="scripts/add.js"></script>
 </body>
 </html>

@@ -1,0 +1,68 @@
+.mainbox {
+	width: 900px;
+}
+
+.topbar {
+	border: 2px solid black;
+	background-color: #ffb4b0;
+	padding: 20px 0px 20px 0;
+
+
+}
+
+.topbar ul {
+	list-style-type: none;
+	margin: 0 0 0 15px;
+	padding: 0;
+}
+
+.topbar li {
+	display: inline-block;
+}
+
+.topbar li:active {
+  color: black;
+}
+
+.leftbox {
+    background-color: #4dd7fa;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px 10px 0 0;
+    float: left;
+    width: 270px;
+    height: 450px;
+}
+
+.rightbox {
+	  background-color: #fefac0;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px 0 0 0;
+    float: left;
+    width: 590px;
+    height: 450px;
+}
+
+.rightbox p {
+	display: inline-block;
+	overflow: hidden;
+}
+
+.genres {
+	column-count: 2;
+}
+
+.filterbutton {
+	margin: 10px;
+	text-align: center;
+
+}
+
+.visible {
+	display: inline-block;
+}
+
+.hidden {
+	display: none;
+}
